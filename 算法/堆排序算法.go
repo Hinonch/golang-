@@ -45,7 +45,8 @@ func swap(s []int, i int, j int) {
 }
 
 func main() {
-    s := []int{0}
+    s := make([]int, 101)
+    s[0] = 0
     for i := 100; i > 0; i-- {
         s = append(s, rand.Intn(10000))
     }
